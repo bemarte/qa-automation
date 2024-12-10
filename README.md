@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # qa-automation
 
-```markdown
 # Cypress Test Automation
 =======
-# QA Automation
->>>>>>> 57f550313848e2a8de0d11af21564afdd752c351
 
 Este repositório tem a finalidade de armazenar automações de testes utilizando o Cypress. Os testes são focados especialmente no site Sauce Demo e incluem testes de ponta a ponta (E2E).
 
