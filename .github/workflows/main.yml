@@ -1,19 +1,15 @@
-name: Cypress Tests
-
+name: Tests on Chrome
 on: push
-
 jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
+  chrome:
+    runs-on: ubuntu-24.04
+    name: E2E on Chrome
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
+      - uses: actions/checkout@v4
+      - uses: cypress-io/github-action@v6
         with:
+          browser: chrome
           working-directory: ./cypress/e2e
-          run: |
+          start: |
             npm install
             npm test
