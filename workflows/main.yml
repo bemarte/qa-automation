@@ -19,4 +19,4 @@ jobs:
           working-directory: ./cypress/e2e
           run: |
             npm install
-            npm run test
+            npm test
