@@ -1,22 +1,17 @@
 name: Cypress Tests
 
-on:
-  push
+on: push
 
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      # Instale as dependências NPM, faça o cache corretamente
-      # e execute todos os testes do Cypress
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: ./cypress/e2e/
-          run: |
-            npm install
-            npm run test 
+          build: npm run build
+          start: npm test
