@@ -14,5 +14,6 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           working-directory: ./cypress/e2e
-          install: npm install
-          start: npm test
+          run: |
+            npm install
+            npm test
