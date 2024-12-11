@@ -6,9 +6,8 @@ jobs:
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
+      - uses: cypress-io/github-action@v6.1.0
         with:
-          browser: chrome
-          working-directory: ./cypress
+          working-directory: ./cypress/e2e
       - run: npm install
       - run: npm test
