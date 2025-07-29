@@ -59,8 +59,3 @@ Sinta-se à vontade para contribuir com este projeto. Para isso, siga os passos 
 5. Crie um Pull Request.
 
 ```
-<<<<<<< HEAD
-Se precisar de mais alguma coisa, estou à disposição! 😊
-=======
-Se precisar de mais alguma coisa, estou à disposição! 😊
->>>>>>> 57f550313848e2a8de0d11af21564afdd752c351
